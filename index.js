@@ -3,7 +3,7 @@
  *
  * @callback creatorCallback
  * @param {number} index a numeric index to help the callback return different things per call, deterministically
- * @return {any} - should return something, to be useful!
+ * @return {*} - should return something, to be useful!
  */
 
 /**
@@ -43,7 +43,7 @@ function repeat(numReps, callbackFn) {
 }
 
 /**
- * @typedef {[any,any]} Pair
+ * @typedef {string[]} Pair
  */
 
 /** Combine the elements of two given arrays into a single array of pairs.
