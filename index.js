@@ -42,4 +42,28 @@ function repeat(numReps, callbackFn) {
   }
 }
 
-module.exports = { collect, repeat };
+/**
+ * @typedef {[any,any]} Pair
+ */
+
+/** Combine the elements of two given arrays into a single array of pairs.
+ * If the input arrays are not the same length, excess elements will be ignored.
+ * @param {any[]} inputArr1
+ * @param {any[]} inputArr2
+ * @returns {Pair[]} array of tuples (2-element array)
+ */
+function zip(inputArr1, inputArr2) {
+  const results = [];
+  let ix = 0;
+  while (ix < inputArr1.length && ix < inputArr2.length) {
+    const a = inputArr1[ix];
+    const b = inputArr2[ix];
+    /** @type Pair */
+    const pair = [a, b];
+    results.push(pair);
+    ix++;
+  }
+  return results;
+}
+
+module.exports = { collect, repeat, zip };
