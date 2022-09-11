@@ -1,6 +1,6 @@
 {
   "name": "@nbogie/useful-array-functions",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Useful array functions",
   "main": "index.js",
   "author": "nbogie",
