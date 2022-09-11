@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "nbogie",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nbogie/npm-exercise-array-fns.git"
+  },
   "scripts": {
     "test": "jest"
   },
